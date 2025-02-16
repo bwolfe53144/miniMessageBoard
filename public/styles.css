@@ -1,0 +1,218 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+  
+  body {
+    font-family: Arial, sans-serif;
+    background-color: #f3f4f6;
+    color: #333;
+    line-height: 1.6;
+    padding: 0 1rem;
+    background-color: rgb(209, 205, 205);
+  }
+
+
+ul {
+    list-style-type: none;
+}
+
+h1 {
+    font-size: 4rem;
+    text-align: center;
+    margin-bottom: 10px;
+}
+
+button {
+    border-radius: 1rem;
+    font-size: 1.3rem;
+    font-weight: bold;
+    padding: 1rem;
+    background-color: rgb(41, 41, 110);
+    color: white;
+}
+
+button:hover {
+    background-color: #0056b3;
+  }
+
+.name {
+    font-weight: bold;
+}
+
+.pageLayout {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.newPageLayout {
+    display: grid;
+    place-items: center;
+}
+
+.container {
+    width: 200vh;
+    border: 5px black solid;
+    border-radius: 10px;
+    font-weight: bold;
+    padding: 10px;
+    margin: 15px;
+    background-color: white;
+}
+
+.mainButton {
+    font-size: 1rem;
+    font-weight: bold;
+}
+
+.mainName {
+    font-size: 2.5rem;
+}
+
+.mainText {
+    font-size: 2rem;
+    line-height: 1.2;
+    margin-bottom: 15px;
+}
+
+/* Message Page Styles */
+.messageContainer {
+    max-width: 800px;
+    margin: 2rem auto;
+    padding: 1rem;
+    background-color: #ffffff;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+    overflow-y: auto;
+    height: 60vh;
+    justify-content: space-between;
+  }
+
+.messagePageLayout {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 20px;
+}
+
+.messageName {
+    font-size: 4rem;
+}
+
+.messageText {
+    padding: 0.8rem 1rem;
+    border-radius: 20px;
+    max-width: 90%;
+    word-wrap: break-word;
+    font-size: 3rem;
+}
+
+.messageDate {
+    font-size: 2rem;
+    text-align: center;
+}
+
+/* General form styles */
+form {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    max-width: 500px;
+    margin: 0 auto;
+    padding: 20px;
+    background-color: #f8ecec;
+    border-radius: 8px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    font-family: Arial, sans-serif;
+    margin-bottom: 40px;
+    height: auto;
+  }
+  
+  /* Form field styles */
+  form label {
+    display: block;
+    margin-bottom: 8px;
+    font-weight: bold;
+    font-size: 1.5rem;
+    color: #333;
+  }
+  
+  form input[type="text"],
+  form textarea {
+    width: 95%;
+    padding: 10px;
+    margin-bottom: 16px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    font-size: 14px;
+    box-sizing: border-box;
+  }
+  
+  form input[type="text"]:focus,
+  form textarea:focus {
+    border-color: #007BFF;
+    outline: none;
+    box-shadow: 0 0 4px rgba(0, 123, 255, 0.3);
+  }
+
+  form button[type="submit"] {
+    width: 100%;
+    font-weight: bold;
+  }
+  
+  /* Textarea */
+  form textarea {
+    resize: none;
+    height: 100 px;
+  }
+  
+  /* Responsive adjustments */
+  @media (min-width: 100px) and (max-width: 780px) {
+    body {
+        padding: 0;
+    }
+    form {
+        padding: 15px;
+    }
+
+    form button[type="submit"] {
+        width: 50%;
+      }
+
+      h1 {
+        font-size: 2.7rem;
+    }
+
+    .messageDate {
+        font-size: 1rem;
+    }
+
+    .messageText, .mainText {
+        font-size: 2rem;
+        overflow-wrap: break-word;
+    }
+
+    button {
+        font-size: 2rem;
+        padding: .5rem;
+    }
+
+  
+    .mainButton {
+        font-size: 1rem;
+        padding: 1rem;
+    }
+    .mainName {
+        font-size: 3rem;
+    }
+
+    .container {
+        width: 90%;
+    }
+
+  }

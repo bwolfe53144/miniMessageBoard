@@ -1,0 +1,21 @@
+<html>
+  <head>
+    <title>Homepage</title>
+    <link rel="stylesheet" href="/styles.css">
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+  </head>
+  <body>
+    <div class="messagePageLayout">
+        <h1>Message</h1>
+        <div class="messageContainer">
+            <div>
+                <div class="messageName"><%= user.username %></div>
+                <div class="messageText"><%= user.text %></div>
+            </div>
+            <div class="messageDate"><%= user.date %></div>
+        </div>
+        <button class="messageButton" onclick="location.href='/'" type="button">
+            Back</button>
+    </div>
+  </body>
+</html>

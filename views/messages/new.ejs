@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+  <link rel="stylesheet" href="/styles.css">
+</head>
+<body>
+  <div class="newPageLayout">
+  <h1>New Message</h1>
+  <form action="/messages/new" method="POST">
+    <label>Name
+      <input type="text" required name="messageUser" value="<%= locals.messageUser %>" />
+    </label>
+    <label>Message
+        <textarea rows="15" cols="30" type="text" required name="messageText" value="<%= locals.messageText %>" ></textarea>
+      </label>
+    <button type="submit">Submit</button>
+  </form>
+  <button onclick="location.href='/'" type="button">Back</button>
+</div>
+</body>
+</html>

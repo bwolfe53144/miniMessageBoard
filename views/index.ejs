@@ -1,0 +1,23 @@
+<html>
+  <head>
+    <title>Homepage</title>
+    <link rel="stylesheet" href="/styles.css">
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+  </head>
+  <body>
+    <div class="pageLayout">
+    <h1>Message Board</h1>
+    <button onclick="location.href='/messages/new'" type="button">
+      New Message</button>
+    <ul>
+      <% messages.map((mes) => { %>
+        <li class="container">
+        <div class="mainName"><%= mes.username %></div>
+        <div class="mainText"><%= mes.text %></div>
+        <button class="mainButton" onclick="location.href='/messages/<%= messages.indexOf(mes) %>'" type="button">View Message</button>
+        </li>
+      <% }) %>
+    </ul>
+  </div>
+  </body>
+</html>
