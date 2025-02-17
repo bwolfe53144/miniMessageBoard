@@ -2,7 +2,7 @@ require("dotenv").config();
 const { Pool } = require("pg");
 
 module.exports = new Pool({
-  host: process.env.PGHOST,
+  host: 'postgres.railway.internal',
   user: process.env.PGUSER,
   database: process.env.PGDATABASE,
   password: process.env.PGPASSWORD,
