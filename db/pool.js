@@ -9,4 +9,3 @@ module.exports = new Pool({
   port: process.env.DB_PORT,
 });
 
-const { Pool } = require('pg');
