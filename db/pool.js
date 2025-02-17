@@ -2,7 +2,7 @@ require("dotenv").config();
 const { Pool } = require("pg");
 
 module.exports = new Pool({
-  host: process.env.DB_HOST,
+  host: 'minimessageboard-production-50ad.up.railway.app',
   user: process.env.DB_USER,
   database: process.env.DB_DATABASE,
   password: process.env.DB_PASSWORD,
