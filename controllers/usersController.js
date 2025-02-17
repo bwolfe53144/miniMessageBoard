@@ -13,7 +13,6 @@ async function createUsernameGet(req, res) {
 
 async function createUsernamePost(req, res) {
   const date = new Date().toLocaleString();
-  console.log(date);
   await db.insertMessage(req.body, date);
   res.redirect("/");
 };
