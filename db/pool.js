@@ -1,11 +1,12 @@
 require("dotenv").config();
 const { Pool } = require("pg");
 
-const connectionString =
-  "postgresql://postgres:ofdzHDfGpEKRdCbQuFrCOvSyZcEYuLde@tramway.proxy.rlwy.net:54203/railway";
+module.exports = new Pool({
+  host: process.env.DB_HOST,
+  user: process.env.DB_USER,
+  database: process.env.DB_DATABASE,
+  password: process.env.DB_PASSWORD,
+  port: process.env.DB_PORT,
+});
 
-  const pool = new Pool({
-    connectionString,
-  });
-  
-  module.exports = pool;
+const { Pool } = require('pg');
